@@ -1,3 +1,4 @@
+# Written by Benny
 from random import choice
 play = "y"
 while (play == "y"):
