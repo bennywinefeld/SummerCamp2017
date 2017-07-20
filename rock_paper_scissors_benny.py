@@ -1,5 +1,5 @@
-# Written by Benny
-from random import choice
+# Written by Benny 
+from random import *
 play = "y"
 while (play == "y"):
     your_choice = input("Please select rock, paper, or scissors: ").lower()
