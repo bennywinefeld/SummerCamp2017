@@ -98,7 +98,7 @@ if (__name__ == "__main__"):
     while (not game_over):
         if (myBowlStack.player == "human"):
             # Human plays
-            action = input("\nSelect one of the choices:\n1 - add bowl with food\n2 - add empty bowl\n3 - let the dog eat\n")
+            action = str(input("\nSelect one of the choices:\n1 - add bowl with food\n2 - add empty bowl\n3 - let the dog eat\n"))
             if (action == "1"):
                 myBowlStack.add_bowl(Bowl("full"))                
             elif (action == "2"):
@@ -113,7 +113,7 @@ if (__name__ == "__main__"):
                 print("Incorrect input!")
         else:
             # Dog plays
-            action = input("Select one of the choices:\n1 - eat food\n2 - remove top bowl\n3 - ask your master for more food\n")  
+            action = str(input("Select one of the choices:\n1 - eat food\n2 - remove top bowl\n3 - ask your master for more food\n"))  
             if (action == "1"):
                 myBowlStack.eat_food()
             elif(action == "2"):
